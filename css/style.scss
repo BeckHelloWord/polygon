@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.shapeBox {
+  height: 100%;
+  background: #246b9f;
+  overflow: hidden;
+  .shape1,.shape1:after,.shape1:before {
+    width: 238px;
+    height: 82px;
+    background: rgba(255, 255, 255, .5);
+  }
+  .shape1{
+    position: relative;
+    margin:200px auto;
+  }
+  .shape1:after{
+    content: "";
+    position: absolute;
+    top:0;
+    right:-15px;
+    background: red;
+    transform:skewX(20deg)
+  }
+  .shape1:before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:-15px;
+    background: red;
+    transform:skewX(-20deg)
+  }
+}

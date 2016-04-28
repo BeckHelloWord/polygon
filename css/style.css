@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+.shapeBox {
+  height: 100%;
+  background: #246b9f;
+  overflow: hidden; }
+  .shapeBox .shape1, .shapeBox .shape1:after, .shapeBox .shape1:before {
+    width: 238px;
+    height: 82px;
+    background: rgba(255, 255, 255, 0.5); }
+  .shapeBox .shape1 {
+    position: relative;
+    margin: 200px auto; }
+  .shapeBox .shape1:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background: red;
+    transform: skewX(20deg); }
+  .shapeBox .shape1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -15px;
+    background: red;
+    transform: skewX(-20deg); }
+
+/*# sourceMappingURL=style.css.map */
